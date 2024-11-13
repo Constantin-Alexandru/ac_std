@@ -3,4 +3,7 @@ build/
 
 # Cache directory
 .cache/
+
+# LSP guide file
 compile_commands.json
+

@@ -3,6 +3,9 @@ project(ac_std)
 
 set(CMAKE_CXX_STANDARD 20)
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON CACHE INTERNAL "")
+
 file(GLOB SOURCES src/*.cpp src/*/*.cpp src/*/*/*.cpp)
 
 add_library(${PROJECT_NAME} ${SOURCES})
@@ -19,3 +22,4 @@ target_compile_options(${PROJECT_NAME}
 )
 
 set_target_properties(${PROJECT_NAME} PROPERTIES LINKER_LANGUAGE CXX)
+

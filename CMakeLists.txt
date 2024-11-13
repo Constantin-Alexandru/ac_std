@@ -3,15 +3,14 @@ project(ac_std)
 
 set(CMAKE_CXX_STANDARD 20)
 
-
-file(GLOB HEADERS include/* include/*/* include/*/*/*)
-file(GLOB SOURCES src/* src/*/* src/*/*/*)
+file(GLOB SOURCES src/*.cpp src/*/*.cpp src/*/*/*.cpp)
 
 add_library(${PROJECT_NAME} ${SOURCES})
 
 target_include_directories(${PROJECT_NAME}
   PUBLIC
-    ${HEADERS}
+   ${CMAKE_CURRENT_SOURCE_DIR}/include
+   ${CMAKE_CURRENT_SOURCE_DIR}/include/ac_std
 )
 
 target_compile_options(${PROJECT_NAME}

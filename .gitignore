@@ -3,3 +3,4 @@ build/
 
 # Cache directory
 .cache/
+compile_commands.json

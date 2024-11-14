@@ -3,7 +3,7 @@
 #ifndef INCLUDE_CORE_PLATFORM_H_
 #define INCLUDE_CORE_PLATFORM_H_
 
-//=== COMPILER ===\\
+//=== COMPILER ===
 
 #if defined(__clang__)
 #define COMPILER_CLANG 1
@@ -15,7 +15,7 @@
 #error missing Compiler definition
 #endif  // Compiler
 
-//=== OPERATING SYSTEM ===\\
+//=== OPERATING SYSTEM ===
 
 #if defined(_WIN32)
 #define OS_WINDOWS 1
@@ -27,7 +27,7 @@
 #error missing OS definition
 #endif  // OS
 
-//=== ARCHITECTURE ===\\
+//=== ARCHITECTURE ===
 
 #if defined(__amd64__) || defined(_M_AMD64)
 #define ARCH_X64 1
@@ -39,7 +39,7 @@
 #error missing Architecture definition
 #endif
 
-//=== DEFAULT VALUES ===\\
+//=== DEFAULT VALUES ===
 
 #if !defined(COMPILER_CLANG)
 #define COMPILER_CLANG 0
